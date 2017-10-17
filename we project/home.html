@@ -1,0 +1,111 @@
+	<?php    
+ session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> ZoomRTC </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1 "> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<style>
+		body {background-color: #F5F5F5;
+		    /*margin-top:200px ; */
+			height:400px;
+      
+		     }
+		#h1{   
+         color:blue;
+		     margin-bottom: 40px;
+		     font-family: italic;
+		     font-size: 50px;
+
+		      }
+		.page-header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  margin-top: 0px;
+  margin-left: 30px;
+
+}
+
+.page-header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+.page-header{
+	margin-bottom: 10px;
+}
+#subscript{
+  font-size: 15px;
+  font-style: italic;
+}
+
+#bgimg{
+  width: 700px;
+  height:380px;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+.buttonmargin{
+  margin-top: 100px;
+}
+
+	</style>
+</head>
+
+<div class="container-fluid">
+  
+
+  <div class="page-header">
+    <img src="logo.jpg">
+    <h1 id="h1"> ZoomRTC <sub id="subscript"> we connect people</sub>  </h1>   
+  </div>
+
+
+
+<body >
+
+
+<div class="row ">
+	 
+       
+        <div class ="col-md-8"  > 
+        <div> <img src="weconnectpeople.jpg" id="bgimg"></div>
+
+          </div>
+        
+      
+      <div class="buttonmargin">
+       <div class="col-md-3">    
+       <a href="loginpage.php">
+       <form action="login.php" method="POST">
+
+        <button type="button" class="btn btn-primary btn-block">Login</button>
+        </form>
+        </a>
+        <br>
+        <a href="signuppage.php"> 
+        
+       <button type="button" class="btn btn-primary btn-block">Sign Up </button>  
+       </a>        
+       </div>
+       </div>
+
+
+</div>
+
+
+
+</body>
+
+</div>
+</html>

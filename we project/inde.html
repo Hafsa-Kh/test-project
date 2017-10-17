@@ -1,0 +1,268 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>CHAT </title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="bootstrap.css" rel="stylesheet" />
+
+	<style>
+
+#logout{margin-left: 400px;
+        margin-right: 100px;}	
+		
+body{margin-top: 0px;
+     background-color: #F5F5F5;}
+#log{height: 210px;}
+
+.navbar-nav > li{
+  padding-left:80px;
+  padding-right: 80px;
+  
+}
+
+
+
+	</style>
+</head>
+<body style="font-family:Verdana">
+
+<div class="container">
+
+<nav class="navbar navbar-inverse navbar-default" >
+
+  <div class="container-fluid">
+
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="inde.html"> Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li > <a href="userprofile.html">Profile</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="help.html">Help</a> </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="row">
+
+<div class="col-md-8">
+<div class="panel panel-info">
+<div class="panel panel-heading">
+CHAT
+</div>
+
+<div class="panel-body">
+
+<div  id="log"> </div>
+
+</div>
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">video call</a>
+    </div>
+    <!--
+    <ul class="nav navbar-nav">
+      <li><a href="#">home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+    -->
+  </div>
+</nav>
+
+<div class="pannel-footer">
+<form id="messageForm">
+	<div class="form-group">
+	<label>Enter message</label>
+	<textarea class="form-control" id="text"></textarea>
+	<br />
+	<button type="button" class="btn btn-info">Send</button>
+	</div>
+</form>
+</div>
+	
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+<div class="panel panel-primary">
+<div class="panel-heading"> Online users </div>
+<div class="panel-body" style="height:520px;">
+
+<ul class="media-list">
+
+                                    <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="user.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                       </div>
+                                    </li>
+     <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="userr.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Jhon Rexa | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                    <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="user.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                    <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="userr.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Jhon Rexa | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                     <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="user.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+     <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="userr.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Jhon Rexa | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                    <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="user.jpg" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                  
+                                </ul> 
+    
+
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+ <!--<?php
+
+ if(isset($_SESSION['u_id'])) {
+         echo '
+
+         -->
+        <form action="logout.php" method="POST">
+
+        <button type="submit" name="submit" class="btn btn-primary" id="logout"> Logout</button>
+            
+        </form>       
+
+<!--
+          ';
+         }  else {
+            echo 'you must be logged in to see this page';
+	
+         }
+ ?> 
+ -->
+
+</body>
+
+<script src="client.js"></script>
+</html>
+ 
